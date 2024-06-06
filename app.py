@@ -138,8 +138,8 @@ if input_question:
     question_vector = vec.tolist()[0]
 
     # Get input dates
-    default_start_date = datetime(2024, 5, 1)
-    default_end_date = datetime(2024, 5, 15)
+    default_start_date = datetime(2024, 5, 23)
+    default_end_date = datetime(2024, 5, 31)
 
     selected_start_date = st.date_input("Select start date:", default_start_date)
     formatted_start_date = selected_start_date.strftime("%Y-%m-%d")
@@ -213,10 +213,10 @@ if input_question:
                 st.dataframe(df)
                 display_distribution_charts(df)
 
-                # # Send rating to Tally
-                # execution_time = round(end_time - start_time, 2)
-                # tally_form_url = f'https://tally.so/embed/wzq1Aa?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&run_id={run_id}&time={execution_time}'
-                # components.iframe(tally_form_url, width=700, height=800, scrolling=True)
+                # Send rating to Tally
+                execution_time = round(end_time - start_time, 2)
+                tally_form_url = f'https://tally.so/embed/mKoLOD?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&run_id={run_id}&time={execution_time}'
+                components.iframe(tally_form_url, width=700, height=800, scrolling=True)
 
             except BadRequestError as e:
                 st.error(f'Failed to execute search (embeddings might be missing for this index): {e.info}')
