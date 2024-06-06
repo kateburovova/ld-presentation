@@ -106,6 +106,10 @@ else:
 if selected_index:
     category_values, language_values, country_values = populate_default_values(selected_index, es_config)
 
+    st.markdown('Once the strategic mapping of informational space is complete, options for filtering will become '
+                'available. This mapping categorizes information sources into groups based on their roles within '
+                'the informational space.')
+
     with st.popover("Tap to refine filters"):
         st.markdown("Hihi 👋")
         st.markdown("If Any remains selected or no values at all, filtering will not be applied to this field. Start typing to find the option faster.")
