@@ -72,7 +72,7 @@ display_index_mapping = {v: k for k, v in index_display_mapping.items()}
 
 # Mapping for project
 project_display_mapping = {
-    "1-15 May 2024": "dem-by"
+    "1-31 May 2024": "iqdisinfo"
 }
 
 # Reverse mapping for projects

@@ -46,14 +46,14 @@ def populate_default_values(index_name, es_config):
 
     return sorted(category_values), sorted(language_values), sorted(country_values)
 
-index_options = [
-    'dem-by-telegram',
-    'dem-by-youtube',
-    'dem-by-odnoklassniki',
-    'dem-by-vkontakte',
-    'dem-by-instagram',
-    'dem-by-web'
-]
+# index_options = [
+#     'dem-by-telegram',
+#     'dem-by-youtube',
+#     'dem-by-odnoklassniki',
+#     'dem-by-vkontakte',
+#     'dem-by-instagram',
+#     'dem-by-web'
+# ]
 
 project_indexes = {
     # 'ua-by': [
