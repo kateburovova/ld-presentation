@@ -103,11 +103,11 @@ else:
         st.write(f"We'll search in: {', '.join([display_index_mapping[idx] for idx in selected_indexes])}")
     selected_index = ",".join(selected_indexes)
 
+st.markdown('Once the strategic mapping of informational space is complete, options for filtering will become '
+            'available. This mapping categorizes information sources into groups based on their roles within '
+            'the informational space.')
 
 if selected_index:
-    st.markdown('Once the strategic mapping of informational space is complete, options for filtering will become '
-                'available. This mapping categorizes information sources into groups based on their roles within '
-                'the informational space.')
 
     category_values, language_values, country_values = populate_default_values(selected_index, es_config)
 
