@@ -62,13 +62,8 @@ project_indexes = {
     #     'ua-by-web',
     #     'ua-by-youtube'
     # ],
-    'dem-by': [
-        'dem-by-telegram',
-        'dem-by-youtube',
-        'dem-by-odnoklassniki',
-        'dem-by-vkontakte',
-        'dem-by-instagram',
-        'dem-by-web'
+    'iqdisinfo': [
+        'cs-disininfo-iq-telegram'
     ]
 }
     # 'ndi-lithuania': [

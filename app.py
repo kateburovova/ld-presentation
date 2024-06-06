@@ -21,7 +21,7 @@ from utils import (display_distribution_charts,populate_default_values, project_
 
 # Init Langchain and Langsmith services
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_PROJECT"] = f"rag_app : summarization : oip_workshop"
+os.environ["LANGCHAIN_PROJECT"] = f"rag_app : summarization : iqdisinfo"
 os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
 os.environ["LANGCHAIN_API_KEY"] = st.secrets['ld_rag']['LANGCHAIN_API_KEY']
 os.environ["LANGSMITH_ACC"] = st.secrets['ld_rag']['LANGSMITH_ACC']
@@ -62,10 +62,7 @@ prompt_template = hub.pull(url)
 
 # Mappings for indexes
 index_display_mapping = {
-    "vkontakte": "dem-by-vkontakte",
-    "telegram": "dem-by-telegram",
-    "odnoklassniki": "dem-by-odnoklassniki",
-    "youtube": "dem-by-youtube"
+    "telegram": "cs-disininfo-iq-telegram"
 }
 
 selected_indexes = []
